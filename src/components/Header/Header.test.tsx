@@ -4,54 +4,54 @@ import Header from './Header';
 
 test('renders my name', () => {
   render(<Header />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const myName = screen.getByTestId('myName');
+  expect(myName).toBeInTheDocument();
 });
 
 test('renders (About Me) tab button', () => {
     render(<Header />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+    const aboutMeButton = screen.getByText('About Me');
+    expect(aboutMeButton).toBeInTheDocument();
 });
   
 test('(About Me) tab button can be clicked', () => {
     render(<Header />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+    const aboutMeButton = screen.getByText('About Me');
+    fireEvent.click(aboutMeButton);
 });
 
 test('renders (Skills) tab button', () => {
     render(<Header />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+    const skillsButton = screen.getByText('Skills');
+    expect(skillsButton).toBeInTheDocument();
 });
   
 test('(Skills) tab button can be clicked', () => {
     render(<Header />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+    const skillsButton = screen.getByText('Skills');
+    fireEvent.click(skillsButton);
 });
 
 test('renders (Projects) tab button', () => {
     render(<Header />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+    const projectsButton = screen.getByText('Projects');
+    expect(projectsButton).toBeInTheDocument();
 });
   
 test('(Projects) tab button can be clicked', () => {
     render(<Header />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+    const projectsButton = screen.getByText('Projects');
+    fireEvent.click(projectsButton);
 });
 
 test('renders (Contacts) tab button', () => {
     render(<Header />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+    const contactsButton = screen.getByText('Contacts');
+    expect(contactsButton).toBeInTheDocument();
 });
   
 test('(Contacts) tab button can be clicked', () => {
     render(<Header />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
+    const contactsButton = screen.getByText('Contacts');
+    fireEvent.click(contactsButton);
 });

@@ -2,10 +2,6 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Header from './Header';
 
-const props  ={
-    
-}
-
 test('renders my name', () => {
   render(<Header />);
   const myName = screen.getByTestId('myName');

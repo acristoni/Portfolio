@@ -1,19 +1,19 @@
 export const firstTheme = {
     name: 'first',
     colors: {
-      primary: '#16a085',
-      black: '#ecf0f1',
-      background: '#2c3e50',
-      border: '#2980b9',
+      text: '#F0E3CA',
+      markText: '#FF8303',
+      mainBg: '#1B1A17',
+      sectionBg: '#1F1E1B',
     }
   }
   
   export const secondTheme = {
     name: 'second',
     colors: {
-      primary: '#8e44ad',
-      black: '#34495e',
-      background: '#e74c3c',
-      border: '#27ae60',
+      text: '#1B1A17',
+      markText: '#1B1A17',
+      mainBg: '#F0E3CA',
+      sectionBg: '#FF8303',
     }
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import GlobalStyle from './styles/global';
 import { CustomThemeProvider } from './hooks/theme';
-import ButtonTheme from './components/ButtonTheme/ButtonTheme';
+import ButtonTheme from './components/Header/children_component/ButtonTheme/ButtonTheme';
 
 function App() {
   return (

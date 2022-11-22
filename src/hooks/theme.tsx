@@ -14,10 +14,10 @@ interface ThemeContextData {
 interface Theme {
   name: string;
   colors: {
-    primary: string,
-    black: string,
-    background: string,
-    border: string,
+    text: string,
+    markText: string,
+    mainBg: string,
+    sectionBg: string,
   }
 }
 

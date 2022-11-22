@@ -14,7 +14,7 @@ test('renders tab button with title through props', () => {
 });
   
 test('tab button can be clicked', () => {
-    render(<TabButton />);
+    render(<TabButton {...props}/>);
     const tabButton = screen.getByText('Something');
     fireEvent.click(tabButton);
 });

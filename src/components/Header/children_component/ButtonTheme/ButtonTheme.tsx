@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../../../../hooks/theme';
-
+import { Icon } from '../../../Icon/Icon';
 import { Container, ComponentButton } from './styles';
 
 const Button: React.FC = () => {
@@ -12,7 +12,12 @@ const Button: React.FC = () => {
 
   return (
     <Container>
-      <ComponentButton onClick={handleToggleTheme} >Clique aqui para mudar o tema</ComponentButton>
+      <ComponentButton onClick={handleToggleTheme} >
+        <Icon 
+          iconName='question'
+        />  
+        Clique aqui para mudar o tema
+      </ComponentButton>
     </Container>
   );
 };

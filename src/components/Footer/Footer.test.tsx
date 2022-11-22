@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Footer from './Footer';
 
 const props = {
@@ -12,7 +12,7 @@ test('renders my name', () => {
   expect(myName).toBeInTheDocument();
 });
 
-test('renders message to contat me through props', () => {
+test('renders message to contact me through props', () => {
     render(<Footer {...props}/>);
     const message = screen.getByText('If you liked my work and you need me, I am ready to talk to you.');
     expect(message).toBeInTheDocument();

@@ -55,3 +55,15 @@ test('(Contacts) tab button can be clicked', () => {
     const contactsButton = screen.getByText('Contacts');
     fireEvent.click(contactsButton);
 });
+
+test('renders button to change theme', () => {
+    render(<Header />);
+    const themeButton = screen.getByTestId('themeButton');
+    expect(themeButton).toBeInTheDocument();
+});
+  
+test('button to change theme can be clicked', () => {
+    render(<Header />);
+    const themeButton = screen.getByText('themeButton');
+    fireEvent.click(themeButton);
+});

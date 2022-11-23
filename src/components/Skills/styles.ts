@@ -18,12 +18,14 @@ export const SkillsSection = styled.div`
     align-items: baseline;
 `;
 
-export const Skill = styled.div`
+export const Skill = styled.button`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 1rem;
+    background-color: ${props => props.theme.colors.mainBg};
+    border: none;
 `;
 
 export const LogoSkill = styled.img`

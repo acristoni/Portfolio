@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# My Portfolio - By Adonai Cristoni
+
+I made this project to demonstrate the potential I have to solve the problems that you and/or your company are facing in the area of web development.
+In this repository you will also be able to check the way I work using the best practices of the market, making use of tools such as: ReactJS, TDD, React Testing Library, Styled Component and API Context (to manage the global theme of the application)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

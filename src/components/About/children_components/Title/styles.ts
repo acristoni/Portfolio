@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%;
+    width: 50%;
 `;
 
 export const Name = styled.h1`

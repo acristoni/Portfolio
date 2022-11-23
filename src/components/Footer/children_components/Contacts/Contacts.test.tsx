@@ -1,8 +1,14 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Contacts from './Contacts';
+import { contact } from '../../../../types/contact.type';
+import { CustomThemeProvider } from '../../../../hooks/theme';
 
-const props = {
+type Props = {
+  contacts: contact[]
+}
+
+const props: Props = {
   contacts: [
     {
         title: 'Something',
@@ -12,20 +18,32 @@ const props = {
   ]
 }
 
-test('renders my name', () => {
-  render(<Contacts {...props}/>);
+test('renders Contacts', () => {
+  render(
+    <CustomThemeProvider>
+      <Contacts {...props} />
+    </CustomThemeProvider>
+  );
   const myName = screen.getByText('Contacts');
   expect(myName).toBeInTheDocument();
 });
 
 test('renders contact information through props', () => {
-    render(<Contacts {...props}/>);
+    render(
+      <CustomThemeProvider>
+        <Contacts {...props} />
+      </CustomThemeProvider>
+    );
     const contact = screen.getByText('Something');
     expect(contact).toBeInTheDocument();
 });
 
 test('contact information can be clicked', () => {
-  render(<Footer {...props}/>);
+  render(
+    <CustomThemeProvider>
+      <Contacts {...props} />
+    </CustomThemeProvider>
+  );
   const contact = screen.getByText('Something');
   fireEvent.click(contact)
 });

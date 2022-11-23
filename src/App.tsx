@@ -1,14 +1,14 @@
 import React from 'react';
 import GlobalStyle from './styles/global';
 import { CustomThemeProvider } from './hooks/theme';
-import ButtonTheme from './components/Header/children_component/ButtonTheme/ButtonTheme';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <CustomThemeProvider>
       <>
        <GlobalStyle />
-       <ButtonTheme/>
+       <Header />
       </>
     </CustomThemeProvider>
   );

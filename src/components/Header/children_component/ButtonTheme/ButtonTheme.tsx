@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useTheme } from '../../../../hooks/theme';
+import ThemeProvider, { useTheme } from '../../../../hooks/theme';
 import { Icon } from '../../../Icon/Icon';
 import { ComponentButton } from './styles';
 
-const Button: React.FC = () => {
+const ButtonTheme: React.FC = () => {
   const [icon, setIcon] = useState(false)
   const { toggleTheme } = useTheme();
 
@@ -13,7 +13,7 @@ const Button: React.FC = () => {
   }
 
   return (
-    <ComponentButton onClick={handleToggleTheme} >
+    <ComponentButton onClick={handleToggleTheme} data-testid="buttonTheme">
       <Icon 
         iconName={ !icon ? 'sun' : 'moon' }
       />
@@ -21,4 +21,4 @@ const Button: React.FC = () => {
   );
 };
 
-export default Button;
+export default ButtonTheme;

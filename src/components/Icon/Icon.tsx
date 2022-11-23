@@ -24,7 +24,7 @@ export function Icon ({iconName, size, color}: Props) {
     }
 
     return (
-        <Box>
+        <Box color="colors.text">
             <FontAwesomeIcon 
                 icon={
                     iconName === 'sun' ?

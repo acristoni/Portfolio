@@ -5,7 +5,7 @@ import { faQuestion,
          faSun,
          faMoon,
          faLightbulb } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 type Props = {
     iconName: string,
     size?: number,
@@ -38,6 +38,8 @@ export function Icon ({iconName, size, color}: Props) {
                     faGithub :
                     iconName === 'linkedin' ?
                     faLinkedin :
+                    iconName === 'whatsapp' ?
+                    faWhatsapp :
                     faQuestion
                 }
                 fontSize={Size}

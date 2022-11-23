@@ -2,13 +2,22 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Footer from './Footer';
 import { CustomThemeProvider } from '../../hooks/theme';
+import { contact } from '../../types/contact.type';
 
 type Props = {
-  message: string
+  message: string,
+  contacts: contact[]
 }
 
 const props: Props = {
-  message: "If you liked my work and you need me, I am ready to talk to you."
+  message: "If you liked my work and you need me, I am ready to talk to you.",
+  contacts: [
+    {
+      title: "GitHub",
+      icon: "github",
+      href: "https://github.com/acristoni"
+    },
+  ]
 }
 
 test('renders my name', () => {

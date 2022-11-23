@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Title = styled.div`
-  background: ${props => props.theme.colors.sectionBg};
-  display: flex;  
+  display: flex;
+  width: 40%
 `;
 
 export const TextTitle = styled.h1`
   margin: 0;
+  padding: 0;
 `
 
 export const FirstPart = styled(TextTitle)`

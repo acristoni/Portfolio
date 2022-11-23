@@ -3,6 +3,7 @@ import { Container, FirstSection, DescriptionSection } from './styles';
 import AboutTitle from '../../data/aboutTitle.data'
 import Description from './children_components/Description/Description';
 import Title from './children_components/Title/Title';
+import Photo from './children_components/Photo/Photo';
 
 function About() {
   return (
@@ -13,6 +14,7 @@ function About() {
           title={AboutTitle.title}
           subTitle={AboutTitle.subTitle}
         />
+        <Photo/>
       </FirstSection>
       <DescriptionSection>
 

@@ -8,7 +8,7 @@ import { Container, BackGroundCode, BackGrondImg1, BackGrondImg2, MyPhoto } from
 function Photo() {
   return (
     <Container data-testid="title">
-      <BackGroundCode>{sampleCodeBackGround}</BackGroundCode>
+      {/* <BackGroundCode>{sampleCodeBackGround}</BackGroundCode> */}
       <BackGrondImg1 src={orange_spot} alt="orange spot"/>
       <BackGrondImg2 src={grey_spot} alt="grey spot"/>
       <MyPhoto src={me} alt="my picture"/>

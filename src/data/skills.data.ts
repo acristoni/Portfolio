@@ -11,37 +11,37 @@ const skills: skill[] = [
     {
         title: 'JavaScript',
         logo: JavaScript,
-        description: 'something about this stack'
+        description: 'It is JavaScript on Front-End and Back-End, gone are the days when this was a form-validation language!'
     },
     {
         title: 'NestJS',
         logo: NestJS,
-        description: 'something about this stack'
+        description: 'A framework for building efficient back-end, scalable Node.js web applications.'
     },
     {
         title: 'NextJS',
         logo: NextJS,
-        description: 'something about this stack'
+        description: 'A React framework focused on production and efficiency that seeks to bring together several functionalities.  '
     },
     {
         title: 'NodeJS',
         logo: NodeJS,
-        description: 'something about this stack'
+        description: 'Thanks to V8, we have JavaScript in the Back-End'
     },
     {
         title: 'ReactJS',
         logo: ReactJS,
-        description: 'something about this stack'
+        description: 'The most used JavaScript library in Front-End, React!'
     },
     {
         title: 'Storybook',
         logo: Storybook,
-        description: 'something about this stack'
+        description: 'Front-end componentization and documentation in one place'
     },
     {
         title: 'TypeScript',
         logo: TypeScript,
-        description: 'something about this stack'
+        description: 'Strongly typed JavaScript, among other goodies... TypeScript!'
     },
 ]
 

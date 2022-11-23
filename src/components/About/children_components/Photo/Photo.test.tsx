@@ -9,6 +9,6 @@ test('renders photo through props', () => {
       <Photo/>
     </CustomThemeProvider>
   );
-  const title = screen.getByTestId('title');
+  const title = screen.getByTestId('photo');
   expect(title).toBeInTheDocument();
 });

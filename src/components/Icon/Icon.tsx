@@ -3,7 +3,8 @@ import { Box } from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestion,
          faSun,
-         faMoon } from '@fortawesome/free-solid-svg-icons'
+         faMoon,
+         faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
 type Props = {
     iconName: string,
@@ -31,6 +32,8 @@ export function Icon ({iconName, size, color}: Props) {
                     faSun :
                     iconName === 'moon' ?
                     faMoon :
+                    iconName === 'lamp' ?
+                    faLightbulb :
                     faQuestion
                 }
                 fontSize={Size}

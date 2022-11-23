@@ -1,8 +1,9 @@
 import React from "react";
 import { Box } from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faQuestion, 
-        } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion,
+         faSun,
+         faMoon } from '@fortawesome/free-solid-svg-icons'
 
 type Props = {
     iconName: string,
@@ -26,8 +27,10 @@ export function Icon ({iconName, size, color}: Props) {
         <Box>
             <FontAwesomeIcon 
                 icon={
-                    iconName === 'question' ?
-                    faQuestion :
+                    iconName === 'sun' ?
+                    faSun :
+                    iconName === 'moon' ?
+                    faMoon :
                     faQuestion
                 }
                 fontSize={Size}

@@ -3,6 +3,8 @@ import GlobalStyle from './styles/global';
 import { CustomThemeProvider } from './hooks/theme';
 import Header from './components/Header/Header';
 import About from './components/About/About';
+import Skills from './components/Skills/Skills';
+import skills from './data/skills.data'
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
        <GlobalStyle />
        <Header />
        <About />
+       <Skills skills={skills}/>
       </>
     </CustomThemeProvider>
   );

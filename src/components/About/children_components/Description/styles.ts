@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Frame = styled.div`
     border-radius: 50%;
     height: 4rem;
-    width: 4    rem;
+    width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;

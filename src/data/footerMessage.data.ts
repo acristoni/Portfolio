@@ -1,0 +1,1 @@
+export const footerMessage = "If you liked my work and you need me, I am ready to talk to you."

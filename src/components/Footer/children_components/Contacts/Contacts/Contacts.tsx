@@ -1,6 +1,6 @@
 import React from 'react';
-import { contact } from '../../../../types/contact.type';
-import { Icon } from '../../../Icon/Icon';
+import { contact } from '../../../../../types/contact.type';
+import { Icon } from '../../../../Icon/Icon';
 import { Container, Title, ContactsSection, Contact, Link } from './styles';
 
 type Props = {
@@ -9,11 +9,11 @@ type Props = {
 
 function Contacts({ contacts }: Props) {
   return (
-    <Container>
+    <Container data-testid="contacts">
       <Title>Contacts</Title>
       <ContactsSection>
         {
-          contacts.map(contactInfo => {
+          contacts?.map(contactInfo => {
             return (
               <Contact key={contactInfo.title}>
                 <Icon iconName={contactInfo.icon} />

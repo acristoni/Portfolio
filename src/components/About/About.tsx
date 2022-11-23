@@ -8,7 +8,7 @@ import Photo from './children_components/Photo/Photo';
 
 function About() {
   return (
-    <Container>
+    <Container data-testid="about">
       <FirstSection>
         <Title
           name={AboutTitle.name}

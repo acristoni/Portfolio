@@ -7,7 +7,7 @@ import { SHeader, Container, LeftContent, RightContent } from './styles';
 
 function Header() {
   return (
-    <SHeader>
+    <SHeader data-testid="header">
       <Container>
         <LeftContent>
           <Name/>

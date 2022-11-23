@@ -4,8 +4,11 @@ import { CustomThemeProvider } from './hooks/theme';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
-import skills from './data/skills.data'
 import Works from './components/Works/Works';
+import Footer from './components/Footer/Footer';
+import skills from './data/skills.data';
+import { footerMessage } from './data/footerMessage.data'
+import contacts from './data/contacts.data';
 
 function App() {
   return (
@@ -16,6 +19,7 @@ function App() {
        <About />
        <Skills skills={skills}/>
        <Works />
+       <Footer message={footerMessage} contacts={contacts} />
       </>
     </CustomThemeProvider>
   );

@@ -20,4 +20,5 @@ export const SubTitle = styled.span`
     color: ${props => props.theme.colors.text};
     margin: 1%;
     width: 40%;
+    text-align: center;
 `;

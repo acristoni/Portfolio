@@ -8,8 +8,8 @@ export const SHeader = styled.header`
     width: 100%;
     height: 12vh;
     box-shadow: 5px 10px 18px #888888;
-    /* position: fixed;
-    z-index: 2; */
+    position: fixed;
+    z-index: 100;
 `;
 
 export const Container = styled.div`

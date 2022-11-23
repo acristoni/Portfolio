@@ -1,13 +1,14 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Photo from './Photo';
-
-const props = {
-  photoPath: './path/to/photo'
-}
+import { CustomThemeProvider } from '../../../../hooks/theme';
 
 test('renders photo through props', () => {
-  render(<Photo {...props}/>);
+  render(
+    <CustomThemeProvider>
+      <Photo/>
+    </CustomThemeProvider>
+  );
   const title = screen.getByTestId('title');
   expect(title).toBeInTheDocument();
 });

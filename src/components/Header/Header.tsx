@@ -1,5 +1,5 @@
 import React from 'react';
-import subMenusHeader from '../../data/subMenusHeader'
+import subMenusHeader from '../../data/subMenusHeader.data'
 import ButtonTheme from './children_component/ButtonTheme/ButtonTheme';
 import Name from './children_component/Name/Name';
 import TabButton from './children_component/TabButton/TabButton';

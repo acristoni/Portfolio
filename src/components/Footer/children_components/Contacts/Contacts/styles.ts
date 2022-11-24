@@ -14,7 +14,7 @@ export const Title = styled.h2`
 `;
 
 export const ContactsSection = styled.div`
-    width: 100%;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
 `;
@@ -23,12 +23,20 @@ export const Contact = styled.div`
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    margin-right: 20%;
+`;
+
+export const IconBox = styled.div`
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: ${props => props.theme.colors.text};
 `;
 
 export const Link = styled.a`
+    width: 150px;
     text-decoration: none;
     color: ${props => props.theme.colors.markText};
-    margin-left: 1rem;
+    margin-left: 6px;
 `;

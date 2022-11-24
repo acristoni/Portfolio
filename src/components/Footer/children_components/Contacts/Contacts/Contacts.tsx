@@ -1,7 +1,7 @@
 import React from 'react';
 import { contact } from '../../../../../types/contact.type';
 import { Icon } from '../../../../Icon/Icon';
-import { Container, Title, ContactsSection, Contact, Link } from './styles';
+import { Container, Title, ContactsSection, Contact, Link, IconBox } from './styles';
 
 type Props = {
   contacts: contact[]
@@ -16,7 +16,9 @@ function Contacts({ contacts }: Props) {
           contacts?.map(contactInfo => {
             return (
               <Contact key={contactInfo.title}>
-                <Icon iconName={contactInfo.icon} />
+                <IconBox>
+                  <Icon iconName={contactInfo.icon} />
+                </IconBox>
                 <Link href={contactInfo.href}>{contactInfo.title}</Link>
               </Contact> 
             )

@@ -1,6 +1,7 @@
 import React, { createContext, ReactElement, useCallback, useContext, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { firstTheme, secondTheme } from '../styles/themes';
+import Theme from '../types/theme.interface'
 
 type Props = {
   children: ReactElement
@@ -9,16 +10,6 @@ type Props = {
 interface ThemeContextData {
   toggleTheme(): void;
   theme: Theme;
-}
-
-interface Theme {
-  name: string;
-  colors: {
-    text: string,
-    markText: string,
-    mainBg: string,
-    sectionBg: string,
-  }
 }
 
 const ThemeContext = createContext<ThemeContextData>({} as ThemeContextData);

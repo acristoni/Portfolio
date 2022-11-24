@@ -8,7 +8,7 @@ export const Title = styled.div`
 export const TextTitle = styled.h1`
   margin: 0;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 36px;
   font-family: ${props => props.theme.fonts.name};
 `
 

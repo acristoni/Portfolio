@@ -5,7 +5,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 3%;
     width: 100%;
     padding: 3%;
 `;
@@ -13,11 +12,14 @@ export const Container = styled.div`
 export const Title = styled.h2`
     color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.main};
+    font-weight: 600;
+    font-size: 30px;
 `;
 
 export const SkillsSection = styled.div`
     display: flex; 
     align-items: baseline;
+    margin-top: 12px;
 `;
 
 export const Skill = styled.button`
@@ -39,4 +41,6 @@ export const TitleSkill = styled.span`
     margin-top: 10%;
     color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.skills};
+    font-weight: 400;
+    font-size: 22px;
 `;

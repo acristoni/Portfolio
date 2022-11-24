@@ -8,7 +8,6 @@ export const Container = styled.div`
 
 export const FirstSection = styled.div`
   display: flex;  
-
 `;
 
 export const DescriptionSection = styled.div`

@@ -6,7 +6,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
     width: 100%;
     padding: 3%;
 `;
@@ -14,7 +13,8 @@ export const Container = styled.div`
 export const Title = styled.h2`
     color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.main};
-    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 30px;
 `;
 
 export const TitleCarousel = styled.h1`
@@ -25,6 +25,8 @@ export const TitleCarousel = styled.h1`
 export const Carousel = styled.div`
     width: 80%;
     height: 50vh;
+    border-radius: 5%;
     background-color: ${props => props.theme.colors.primary};
-    margin-top: 1rem;
+    box-shadow: 5px 10px 18px #888888;
+    margin-top: 2rem;
 `;

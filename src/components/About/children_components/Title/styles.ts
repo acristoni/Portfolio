@@ -12,18 +12,25 @@ export const Container = styled.div`
 export const Name = styled.h1`
     color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.main};
-    margin: 1%;
+    font-weight: 900;
+    font-size: 64px;
+    margin: 0;
 `;
 
 export const STitle = styled.h2`
     color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.main};
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 17px;
 `;
 
 export const SubTitle = styled.span`
     color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.main};
-    margin: 1%;
-    width: 40%;
-    primary-align: center;
+    margin-top: 17px;
+    width: 50%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
 `;

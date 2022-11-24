@@ -12,6 +12,8 @@ export const Container = styled.div`
 export const Title = styled.h2`
     color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.main};
+    font-size: 32px;
+    font-weight: 700;
 `;
 
 export const ContactsSection = styled.div`
@@ -27,8 +29,8 @@ export const Contact = styled.div`
 `;
 
 export const IconBox = styled.div`
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,5 +42,7 @@ export const Link = styled.a`
     text-decoration: none;
     color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.main};
+    font-size: 24px;
+    font-weight: 400;
     margin-left: 6px;
 `;

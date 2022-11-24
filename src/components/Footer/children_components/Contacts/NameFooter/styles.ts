@@ -9,6 +9,8 @@ export const TextTitle = styled.h1`
   margin: 0;
   padding: 0;
   font-family: ${props => props.theme.fonts.name};
+  font-size: 36px;
+  font-weight: 400;
 `
 
 export const FirstPart = styled(TextTitle)`

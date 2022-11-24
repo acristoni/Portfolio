@@ -13,11 +13,13 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
     color: ${props => props.theme.colors.markText};
+    font-family: ${props => props.theme.fonts.main};
     margin-top: 1rem;
 `;
 
 export const TitleCarousel = styled.h1`
     color: ${props => props.theme.colors.mainBg};
+    font-family: ${props => props.theme.fonts.main};
 `;
 
 export const Carousel = styled.div`

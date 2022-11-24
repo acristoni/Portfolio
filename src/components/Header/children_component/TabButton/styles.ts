@@ -8,4 +8,5 @@ export const SubMenu = styled.a`
 
 export const SubMenuTitle = styled.h3`
     color: ${props => props.theme.colors.text};
+    font-family: ${props => props.theme.fonts.main};
 `;

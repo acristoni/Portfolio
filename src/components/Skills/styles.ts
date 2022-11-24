@@ -12,6 +12,7 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
     color: ${props => props.theme.colors.markText};
+    font-family: ${props => props.theme.fonts.main};
 `;
 
 export const SkillsSection = styled.div`
@@ -37,4 +38,5 @@ export const LogoSkill = styled.img`
 export const TitleSkill = styled.span`
     margin-top: 10%;
     color: ${props => props.theme.colors.text};
+    font-family: ${props => props.theme.fonts.skills};
 `;

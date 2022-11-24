@@ -33,6 +33,7 @@ export const IconLamp = styled.div`
 
 export const TextDescription = styled.span`
     color: ${props => props.theme.colors.text};
+    font-family: ${props => props.theme.fonts.main};
     width: 70%;
 `;
 

@@ -25,6 +25,7 @@ export const RightContent = styled(Column)`
 
 export const FooterMessage = styled.div`
     margin-top: 1rem;
+    font-family: ${props => props.theme.fonts.main};
     color: ${props => props.theme.colors.text};
     width: 60%
 `;

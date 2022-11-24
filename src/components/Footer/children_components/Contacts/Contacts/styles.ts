@@ -11,6 +11,7 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
     color: ${props => props.theme.colors.markText};
+    font-family: ${props => props.theme.fonts.main};
 `;
 
 export const ContactsSection = styled.div`
@@ -38,5 +39,6 @@ export const Link = styled.a`
     width: 150px;
     text-decoration: none;
     color: ${props => props.theme.colors.markText};
+    font-family: ${props => props.theme.fonts.main};
     margin-left: 6px;
 `;

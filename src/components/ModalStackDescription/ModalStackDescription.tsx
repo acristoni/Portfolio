@@ -16,7 +16,7 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     fontSize: 'large',
-    fontFamily: 'cursive',
+    fontFamily: 'Inconsolata',
     fontWeight: 'bold',
   },
 };

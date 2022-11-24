@@ -20,6 +20,8 @@ export const SkillsSection = styled.div`
     display: flex; 
     align-items: baseline;
     margin-top: 12px;
+    width: 90%;
+    justify-content: space-between;
 `;
 
 export const Skill = styled.button`
@@ -33,8 +35,8 @@ export const Skill = styled.button`
 `;
 
 export const LogoSkill = styled.img`
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
 `;
 
 export const TitleSkill = styled.span`
@@ -42,5 +44,5 @@ export const TitleSkill = styled.span`
     color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.skills};
     font-weight: 400;
-    font-size: 22px;
+    font-size: 19px;
 `;

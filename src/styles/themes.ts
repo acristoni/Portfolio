@@ -1,6 +1,6 @@
 export const fontsTypes = {
   main: 'Inconsolata',
-  name: 'Inter',
+  name: 'Anton',
   skills: 'Arial'
 }
 

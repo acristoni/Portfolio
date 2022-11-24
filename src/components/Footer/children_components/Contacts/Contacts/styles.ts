@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: ${props => props.theme.colors.mainBg};
+    background-color: ${props => props.theme.colors.ternary};
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-    color: ${props => props.theme.colors.markText};
+    color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.main};
 `;
 
@@ -32,13 +32,13 @@ export const IconBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.primary};
 `;
 
 export const Link = styled.a`
     width: 150px;
     text-decoration: none;
-    color: ${props => props.theme.colors.markText};
+    color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.main};
     margin-left: 6px;
 `;

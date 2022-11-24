@@ -10,20 +10,20 @@ export const Container = styled.div`
 `;
 
 export const Name = styled.h1`
-    color: ${props => props.theme.colors.markText};
+    color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.main};
     margin: 1%;
 `;
 
 export const STitle = styled.h2`
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.main};
 `;
 
 export const SubTitle = styled.span`
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.main};
     margin: 1%;
     width: 40%;
-    text-align: center;
+    primary-align: center;
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: ${props => props.theme.colors.mainBg};
+    background-color: ${props => props.theme.colors.ternary};
     display: flex;
     align-items: start;
     justify-content: center;
@@ -26,6 +26,6 @@ export const RightContent = styled(Column)`
 export const FooterMessage = styled.div`
     margin-top: 1rem;
     font-family: ${props => props.theme.fonts.main};
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.primary};
     width: 60%
 `;

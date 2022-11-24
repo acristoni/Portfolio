@@ -1,10 +1,10 @@
 export default interface Theme {
     name: string;
     colors: {
-      text: string,
-      markText: string,
-      mainBg: string,
-      sectionBg: string,
+      primary: string,
+      secondary: string,
+      ternary: string,
+      quaternary: string,
     },
     fonts: {
       main: string,

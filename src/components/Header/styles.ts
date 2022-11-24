@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SHeader = styled.header`
-    background: ${props => props.theme.colors.sectionBg};
+    background: ${props => props.theme.colors.quaternary};
     display: flex;
     align-items: center;
     justify-content: center;

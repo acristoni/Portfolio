@@ -15,13 +15,13 @@ export default createGlobalStyle`
 
   body {
     width: 100%;
-    background: ${props => props.theme.colors.mainBg};
+    background: ${props => props.theme.colors.ternary};
   }
 
   h1 {
     width: 100%;
     margin: 50px 0;
     text-align: center;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.primary};
   }
 `;

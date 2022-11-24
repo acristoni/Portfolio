@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-    background-color: ${props => props.theme.colors.sectionBg};
+    background-color: ${props => props.theme.colors.quaternary};
     display: flex;
     padding: 3% 19%;
     justify-content: space-between;
@@ -16,7 +16,7 @@ export const Frame = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${props => props.theme.colors.text};
+    background-color: ${props => props.theme.colors.primary};
 `;
 
 export const IconLamp = styled.div`
@@ -26,13 +26,13 @@ export const IconLamp = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${props => props.theme.colors.mainBg};
-    color: ${props => props.theme.colors.text}
+    background-color: ${props => props.theme.colors.ternary};
+    color: ${props => props.theme.colors.primary}
 `;
 
 
 export const TextDescription = styled.span`
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.main};
     width: 70%;
 `;

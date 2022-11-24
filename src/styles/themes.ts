@@ -7,10 +7,10 @@ export const fontsTypes = {
 export const firstTheme = {
   name: 'first',
   colors: {
-    text: '#F0E3CA',
-    markText: '#FF8303',
-    mainBg: '#1B1A17',
-    sectionBg: '#1F1E1B',
+    primary: '#F0E3CA',
+    secondary: '#FF8303',
+    ternary: '#1B1A17',
+    quaternary: '#1F1E1B',
   },
   fonts: fontsTypes
 }
@@ -18,10 +18,10 @@ export const firstTheme = {
 export const secondTheme = {
   name: 'second',
   colors: {
-    text: '#1B1A17',
-    markText: '#1B1A17',
-    mainBg: '#F0E3CA',
-    sectionBg: '#FF8303',
+    primary: '#1B1A17',
+    secondary: '#1B1A17',
+    ternary: '#F0E3CA',
+    quaternary: '#FF8303',
   },
   fonts: fontsTypes
 }

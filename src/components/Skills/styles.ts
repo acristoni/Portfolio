@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-    color: ${props => props.theme.colors.markText};
+    color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.main};
 `;
 
@@ -26,7 +26,7 @@ export const Skill = styled.button`
     justify-content: center;
     align-items: center;
     margin: 0 1rem;
-    background-color: ${props => props.theme.colors.mainBg};
+    background-color: ${props => props.theme.colors.ternary};
     border: none;
 `;
 
@@ -37,6 +37,6 @@ export const LogoSkill = styled.img`
 
 export const TitleSkill = styled.span`
     margin-top: 10%;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.skills};
 `;

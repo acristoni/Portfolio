@@ -21,7 +21,7 @@ function Skills({skills}: Props) {
   };
   
   return (
-    <Container data-testid="skills">
+    <Container data-testid="skills" id="skills">
       <Title>My Skills</Title>
       <SkillsSection>
         {

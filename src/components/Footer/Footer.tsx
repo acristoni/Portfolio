@@ -11,7 +11,7 @@ type Props = {
 
 function Footer({message, contacts}: Props) {
   return (
-    <Container data-testid="footer">
+    <Container data-testid="footer" id="contacts">
       <LeftContent>
         <NameFooter/>
         <FooterMessage>{message}</FooterMessage>

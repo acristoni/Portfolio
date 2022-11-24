@@ -1,12 +1,18 @@
 import React from 'react';
-import { subMenu } from '../../../../types/subMenu.type'
 import { render, screen, fireEvent } from '@testing-library/react';
 import TabButton from './TabButton';
 import { CustomThemeProvider } from '../../../../hooks/theme';
 
-const props: subMenu = {
+type Props = {
+    title: string,
+    href: string,
+    section: string
+  }
+
+const props: Props = {
     title: 'Something',
-    href: '/some/path'
+    href: '/some/path',
+    section: '/some/path',
 }
 
 test('renders tab button with title through props', () => {

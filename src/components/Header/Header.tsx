@@ -9,6 +9,7 @@ function Header() {
   const [offset, setOffset] = useState(0);
   const [prevOffSet, setPrevOffset] = useState(0);
   const [visible, setVisible] = useState(true)
+  const [section, setSection] = useState("about")
 
   useEffect(() => {
       const onScroll = () => setOffset(window.pageYOffset);
@@ -16,12 +17,22 @@ function Header() {
       window.removeEventListener('scroll', onScroll);
       window.addEventListener('scroll', onScroll, { passive: true });
       return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    }, []);
+    
+    useEffect(()=>{
+    if ( offset > 1000 ) {
+      setSection("#contacts")
+    } else if ( offset > 900 ) {
+      setSection("#projects")
+    } else if ( offset > 600 ) {
+      setSection("#skills")
+    } else if ( offset <= 600 ) {
+      setSection("#aboutme")
+    }
 
-  useEffect(()=>{
     setTimeout(()=>{
         setPrevOffset(offset)
-      }, 1000
+      }, 300
     )
   },[offset])
   
@@ -33,7 +44,10 @@ function Header() {
   },[prevOffSet])
 
   return (
-    <SHeader data-testid="header" style={{'display': `${visible ? 'flex' : 'none '}`}}>
+    <SHeader 
+      data-testid="header" 
+      style={{'display': `${visible ? 'flex' : 'none '}`}}
+    >
       <Container>
         <LeftContent>
           <Name/>
@@ -43,6 +57,7 @@ function Header() {
             subMenusHeader.map(subMenu => {
               return (
                 <TabButton 
+                  section={section}
                   key={subMenu.href}
                   href={subMenu.href}
                   title={subMenu.title}

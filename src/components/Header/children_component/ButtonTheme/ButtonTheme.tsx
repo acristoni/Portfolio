@@ -15,7 +15,7 @@ const ButtonTheme: React.FC = () => {
   return (
     <ComponentButton onClick={handleToggleTheme} data-testid="buttonTheme">
       <Icon 
-        iconName={ !icon ? 'sun' : 'moon' }
+        iconName={ icon ? 'sun' : 'moon' }
       />
     </ComponentButton>
   );

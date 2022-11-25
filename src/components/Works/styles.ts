@@ -25,7 +25,7 @@ export const TitleCarousel = styled.h1`
 export const Carousel = styled.div`
     width: 80%;
     height: 50vh;
-    border-radius: 5%;
+    border-radius: 20px;
     background-color: ${props => props.theme.colors.primary};
     box-shadow: 5px 10px 18px #888888;
     margin-top: 2rem;

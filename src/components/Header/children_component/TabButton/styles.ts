@@ -12,6 +12,6 @@ export const SubMenuTitle = styled.h3`
 `;
 
 export const SubMenuTitleActive = styled.h3`
-    color: ${props => props.theme.colors.secondary};
+    color: ${props => props.theme.colors.quintenary};
     font-family: ${props => props.theme.fonts.main};
 `;

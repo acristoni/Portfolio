@@ -47,5 +47,6 @@ export const Link = styled.a`
     margin-left: 6px;
     &:hover{
         color: ${props => props.theme.colors.primary};
+        text-shadow: 1px 1px 2px #888888;
     }
 `;

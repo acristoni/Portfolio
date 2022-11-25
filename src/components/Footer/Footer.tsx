@@ -1,7 +1,7 @@
 import React from 'react';
 import { contact } from '../../types/contact.type';
-import Contacts from './children_components/Contacts/Contacts/Contacts';
-import NameFooter from './children_components/Contacts/NameFooter/NameFooter';
+import Contacts from './children_components/Contacts/Contacts';
+import NameFooter from './children_components/NameFooter/NameFooter';
 import { Container, LeftContent, RightContent, FooterMessage } from './styles';
 
 type Props = {

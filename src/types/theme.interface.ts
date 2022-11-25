@@ -5,6 +5,7 @@ export default interface Theme {
       secondary: string,
       ternary: string,
       quaternary: string,
+      quintenary: string,
     },
     fonts: {
       main: string,

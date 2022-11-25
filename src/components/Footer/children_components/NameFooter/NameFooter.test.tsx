@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import NameFooter from './NameFooter';
-import { CustomThemeProvider } from '../../../../../hooks/theme';
+import { CustomThemeProvider } from '../../../../hooks/theme';
 
 test('renders my name', () => {
   render(

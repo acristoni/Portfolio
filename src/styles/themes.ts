@@ -11,6 +11,7 @@ export const firstTheme = {
     secondary: '#FF8303',
     ternary: '#1B1A17',
     quaternary: '#1F1E1B',
+    quintenary: '#FF8303',
   },
   fonts: fontsTypes
 }
@@ -22,6 +23,7 @@ export const secondTheme = {
     secondary: '#1B1A17',
     ternary: '#F0E3CA',
     quaternary: '#FF8303',
+    quintenary: '#F0E3CA',
   },
   fonts: fontsTypes
 }

@@ -13,7 +13,7 @@ export const TextTitle = styled.h1`
 `
 
 export const FirstPart = styled(TextTitle)`
-  color: ${props => props.theme.colors.secondary};
+  color: ${props => props.theme.colors.quintenary};
 `;
 
 export const SecondPart = styled(TextTitle)`
@@ -21,5 +21,5 @@ export const SecondPart = styled(TextTitle)`
 `;
 
 export const ThirdPart = styled(TextTitle)`
-  color: ${props => props.theme.colors.secondary};
+  color: ${props => props.theme.colors.quintenary};
 `;

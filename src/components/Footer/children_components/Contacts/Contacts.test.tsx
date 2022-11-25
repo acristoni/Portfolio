@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Contacts from './Contacts';
-import { contact } from '../../../../../types/contact.type';
-import { CustomThemeProvider } from '../../../../../hooks/theme';
+import { contact } from '../../../../types/contact.type';
+import { CustomThemeProvider } from '../../../../hooks/theme';
 
 type Props = {
   contacts: contact[]

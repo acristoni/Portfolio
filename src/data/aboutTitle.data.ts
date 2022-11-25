@@ -3,7 +3,7 @@ import { aboutTitle } from "../types/aboutTitle.type";
 const AboutTitle: aboutTitle = {
     name: 'Adonai Cristoni',
     title: 'FullStack Developer',
-    subTitle: 'Interested in projects that can make difference in our world'
+    subTitle: 'Code soluction for your projects '
 }
 
 export default AboutTitle

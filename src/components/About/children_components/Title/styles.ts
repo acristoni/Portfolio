@@ -25,12 +25,29 @@ export const STitle = styled.h2`
     margin-top: 17px;
 `;
 
-export const SubTitle = styled.span`
+export const SubTitle = styled.span<{characters: number}>`
     color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.main};
     margin-top: 17px;
-    width: 50%;
+    width: ${props => props.characters}ch   ;
     text-align: center;
     font-weight: 500;
     font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid ${props => props.theme.colors.primary};
+    animation: typing 4s steps(${props => props.characters}), blinking 0.5s infinite step-end alternate;
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes blinking {
+        50% {
+            border-color: transparent;
+            
+        }
+    }
 `;

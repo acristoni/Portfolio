@@ -45,4 +45,7 @@ export const Link = styled.a`
     font-size: 24px;
     font-weight: 400;
     margin-left: 6px;
+    &:hover{
+        color: ${props => props.theme.colors.primary};
+    }
 `;

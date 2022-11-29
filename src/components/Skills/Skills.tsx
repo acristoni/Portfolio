@@ -5,9 +5,10 @@ import { Container, Title, SkillsSection, Skill, LogoSkill, TitleSkill } from '.
 
 type Props = {
   skills: skill[]
+  widthPage: number
 }
 
-function Skills({skills}: Props) {
+function Skills({skills, widthPage}: Props) {
   const [stackInfo, setStackInfo] = useState('');
   const [modalIsOpen, setIsOpen] = useState(false);
 

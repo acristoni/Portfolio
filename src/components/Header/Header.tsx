@@ -1,17 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import subMenusHeader from '../../data/subMenusHeader.data'
 import maxScroll from '../../utils/maxScroll';
+import { Icon } from '../Icon/Icon';
 import ButtonTheme from './children_component/ButtonTheme/ButtonTheme';
 import Name from './children_component/Name/Name';
 import TabButton from './children_component/TabButton/TabButton';
-import { SHeader, Container, LeftContent, RightContent } from './styles';
+import { SHeader, 
+         Container, 
+         LeftContent, 
+         RightContentLargeSize, 
+         RightContentSmallSize, 
+         ContainerHeaderMenu,
+         ToggleMenu } from './styles';
 
-function Header() {
+type PropsHeader = {
+  widthPage: number,
+  mobileSize: number
+}
+
+type PropsMenuItens = {
+  mobileSize: number,
+  section: string
+}
+
+function Header({ widthPage, mobileSize }: PropsHeader) {
   const [scrollLimit, setScrollLimit] = useState(0)
   const [offset, setOffset] = useState(0);
   const [prevOffSet, setPrevOffset] = useState(0);
   const [visible, setVisible] = useState(true)
   const [section, setSection] = useState("about")
+  const [toggleMenu, setToggleMenu] = useState(false)
 
   useEffect(() => {
     const limit = maxScroll()
@@ -60,33 +78,60 @@ function Header() {
   },[prevOffSet])
 
   return (
-    <SHeader 
-      data-testid="header" 
-      style={{'display': `${visible ? 'flex' : 'none '}`}}
-    >
-      <Container>
-        <LeftContent>
-          <Name/>
-        </LeftContent>
-        <RightContent>
+    <ContainerHeaderMenu>
+      <SHeader 
+        data-testid="header" 
+        style={{'display': `${visible ? 'flex' : 'none '}`}}
+      >
+        <Container>
+          <LeftContent>
+            <Name/>
+          </LeftContent>
           {
-            subMenusHeader.map(subMenu => {
-              return (
-                <TabButton 
-                  section={section}
-                  key={subMenu.href}
-                  href={subMenu.href}
-                  title={subMenu.title}
-                  data-testid={subMenu.title}
-                />
-              )
-            })  
+            widthPage > mobileSize ?
+            <RightContentLargeSize>
+              <MenuItens mobileSize={mobileSize} section={section} />
+            </RightContentLargeSize> :
+            <RightContentSmallSize onClick={()=>setToggleMenu(!toggleMenu)}>
+              {
+                toggleMenu ?
+                <Icon iconName={'close'} size={30} /> :
+                <Icon iconName={'hamburguerMenu'} size={30} />
+              }
+            </RightContentSmallSize>
           }
-          <ButtonTheme/>
-        </RightContent>
-      </Container>
-    </SHeader>
+        </Container>
+      </SHeader>
+      {
+        widthPage <= mobileSize && toggleMenu && visible &&
+        <ToggleMenu>
+          <MenuItens mobileSize={mobileSize} section={section} />
+        </ToggleMenu>
+      }
+    </ContainerHeaderMenu>
   );
+}
+
+export function MenuItens({mobileSize, section}: PropsMenuItens){
+  return (
+    <>
+      {
+        subMenusHeader.map(subMenu => {
+          return (
+            <TabButton 
+              mobileSize={mobileSize}
+              section={section}
+              key={subMenu.href}
+              href={subMenu.href}
+              title={subMenu.title}
+              data-testid={subMenu.title}
+            />
+          )
+        })  
+      }
+      <ButtonTheme/>
+    </>
+  )
 }
 
 export default Header;

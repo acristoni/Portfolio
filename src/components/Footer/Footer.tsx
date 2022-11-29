@@ -6,10 +6,11 @@ import { Container, LeftContent, RightContent, FooterMessage } from './styles';
 
 type Props = {
   message: string,
-  contacts: contact[]
+  contacts: contact[],
+  widthPage: number
 }
 
-function Footer({message, contacts}: Props) {
+function Footer({message, contacts, widthPage}: Props) {
   return (
     <Container data-testid="footer" id="contacts">
       <LeftContent>

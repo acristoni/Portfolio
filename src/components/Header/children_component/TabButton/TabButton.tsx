@@ -4,10 +4,11 @@ import { SubMenu, Container, SubMenuTitle, SubMenuTitleActive } from './styles';
 type Props = {
   title: string,
   href: string,
-  section: string
+  section: string,
+  mobileSize: number
 }
 
-function TabButton({title, href, section}: Props) {
+function TabButton({title, href, section, mobileSize}: Props) {
   const [isSection, setIsSection] = useState(false)
   
   if (!isSection && section === href) {
@@ -21,10 +22,10 @@ function TabButton({title, href, section}: Props) {
       <SubMenu href={href}>
         {
           !isSection ? 
-          <SubMenuTitle>
+          <SubMenuTitle mobileSize={mobileSize}>
             {title}
           </SubMenuTitle> :
-          <SubMenuTitleActive>
+          <SubMenuTitleActive mobileSize={mobileSize}>
             {title}
           </SubMenuTitleActive> 
         }

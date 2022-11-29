@@ -5,7 +5,8 @@ import Skills from './Skills';
 import { CustomThemeProvider } from '../../hooks/theme';
 
 type Props = {
-    skills: skill[]
+    skills: skill[],
+    widthPage: number
 }
 
 const props: Props  ={
@@ -15,7 +16,8 @@ const props: Props  ={
             logo: '../../assets/logo/react.svg',
             description: 'something about this stack'
         },
-    ]
+    ],
+    widthPage: 1000
 }
 
 test('renders title of My Skills section', () => {

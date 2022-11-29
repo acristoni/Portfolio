@@ -3,10 +3,20 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import Header from './Header';
 import { CustomThemeProvider } from '../../hooks/theme';
 
+type Props = {
+  widthPage: number,
+  mobileSize: number
+}
+
+const props: Props = {
+  widthPage: 1000,
+  mobileSize: 900
+}
+
 test('renders my name', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const myName = screen.getByTestId('myName');
@@ -16,7 +26,7 @@ test('renders my name', () => {
 test('renders (About Me) tab button', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const aboutMeButton = screen.getByText('About Me');
@@ -26,7 +36,7 @@ test('renders (About Me) tab button', () => {
 test('(About Me) tab button can be clicked', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const aboutMeButton = screen.getByText('About Me');
@@ -36,7 +46,7 @@ test('(About Me) tab button can be clicked', () => {
 test('renders (Skills) tab button', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const skillsButton = screen.getByText('Skills');
@@ -46,7 +56,7 @@ test('renders (Skills) tab button', () => {
 test('(Skills) tab button can be clicked', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const skillsButton = screen.getByText('Skills');
@@ -56,7 +66,7 @@ test('(Skills) tab button can be clicked', () => {
 test('renders (Projects) tab button', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const projectsButton = screen.getByText('Projects');
@@ -66,7 +76,7 @@ test('renders (Projects) tab button', () => {
 test('(Projects) tab button can be clicked', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const projectsButton = screen.getByText('Projects');
@@ -76,7 +86,7 @@ test('(Projects) tab button can be clicked', () => {
 test('renders (Contacts) tab button', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const contactsButton = screen.getByText('Contacts');
@@ -86,7 +96,7 @@ test('renders (Contacts) tab button', () => {
 test('(Contacts) tab button can be clicked', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const contactsButton = screen.getByText('Contacts');
@@ -96,7 +106,7 @@ test('(Contacts) tab button can be clicked', () => {
 test('renders button to change theme', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const buttonTheme = screen.getByTestId('buttonTheme');
@@ -106,7 +116,7 @@ test('renders button to change theme', () => {
 test('button to change theme can be clicked', () => {
     render(
         <CustomThemeProvider>
-          <Header />
+          <Header {...props}/>
         </CustomThemeProvider>
     );
     const buttonTheme = screen.getByTestId('buttonTheme');

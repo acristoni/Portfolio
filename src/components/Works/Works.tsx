@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Title, Carousel, TitleCarousel } from './styles';
 
-function Works() {
+function Works({ widthPage }: { widthPage: number }) {
   return (
     <Container data-testid="works" id="projects">
       <Title>My Works</Title>

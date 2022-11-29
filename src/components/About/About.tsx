@@ -6,7 +6,7 @@ import Description from './children_components/Description/Description';
 import Title from './children_components/Title/Title';
 import Photo from './children_components/Photo/Photo';
 
-function About() {
+function About({ widthPage }: { widthPage: number }) {
   return (
     <Container data-testid="about" id="aboutme">
       <FirstSection>

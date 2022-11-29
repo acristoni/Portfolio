@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestion,
          faSun,
          faMoon,
-         faLightbulb } from '@fortawesome/free-solid-svg-icons'
+         faLightbulb,
+         faBars,
+         faClose } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 type Props = {
     iconName: string,
@@ -28,6 +30,10 @@ export function Icon ({iconName, size, color}: Props) {
         <Box color="colors.primary">
             <FontAwesomeIcon 
                 icon={
+                    iconName === 'close' ?
+                    faClose :
+                    iconName === 'hamburguerMenu' ?
+                    faBars :
                     iconName === 'sun' ?
                     faSun :
                     iconName === 'moon' ?

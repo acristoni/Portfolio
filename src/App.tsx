@@ -29,7 +29,7 @@ function App() {
        <GlobalStyle />
        <Header widthPage={pageWidth} mobileSize={mobileSize}/>
        <About mobileSize={mobileSize}/>
-       <Skills skills={skills} widthPage={pageWidth}/>
+       <Skills skills={skills} mobileSize={mobileSize}/>
        <Works widthPage={pageWidth}/>
        <Footer message={footerMessage} contacts={contacts} widthPage={pageWidth}/>
       </>

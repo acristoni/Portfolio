@@ -6,7 +6,7 @@ import { CustomThemeProvider } from '../../hooks/theme';
 
 type Props = {
     skills: skill[],
-    widthPage: number
+    mobileSize: number
 }
 
 const props: Props  ={
@@ -17,7 +17,7 @@ const props: Props  ={
             description: 'something about this stack'
         },
     ],
-    widthPage: 1000
+    mobileSize: 1000
 }
 
 test('renders title of My Skills section', () => {

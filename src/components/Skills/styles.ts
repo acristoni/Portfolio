@@ -16,28 +16,40 @@ export const Title = styled.h2`
     font-size: 30px;
 `;
 
-export const SkillsSection = styled.div`
+export const SkillsSection = styled.div<{mobileSize: number}>`
     display: flex; 
-    align-items: baseline;
+    flex-direction: column;
     margin-top: 12px;
     width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
+
+    @media (min-width: ${props => props.mobileSize}px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 `;
 
-export const Skill = styled.button`
+export const Skill = styled.button<{mobileSize: number}>`
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2%;
     align-items: center;
-    margin: 1rem;
+    margin-bottom: 4%;
+    padding: 3%;
     background-color: ${props => props.theme.colors.ternary};
     border: none;
     &:hover{
         background-color: ${props => props.theme.colors.quaternary};
-        border-radius: 5%;
+        border-radius: 10px;
         box-shadow: 5px 10px 18px #888888;
+    }
+
+    @media (min-width: ${props => props.mobileSize}px) {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+        align-items: center;
+        margin: 1rem;
     }
 `;
 
@@ -46,10 +58,18 @@ export const LogoSkill = styled.img`
     height: 5rem;
 `;
 
-export const TitleSkill = styled.span`
-    margin-top: 10%;
+export const TitleSkill = styled.span<{mobileSize: number}>`
+    margin-top: 0;
+    margin-left: 5%;
     color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.skills};
-    font-weight: 400;
-    font-size: 19px;
+    font-weight: 500;
+    font-size: 24px;
+
+    @media (min-width: ${props => props.mobileSize}px) {
+        margin-top: 10%;
+        margin-left: 0;
+        font-weight: 400;
+        font-size: 19px;
+    }
 `;

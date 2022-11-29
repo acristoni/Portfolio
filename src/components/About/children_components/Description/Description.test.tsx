@@ -4,7 +4,8 @@ import Description from './Description';
 import { CustomThemeProvider } from '../../../../hooks/theme';
 
 const props = {
-  descriptionAboutMe: 'Anything I want to say about me!'
+  descriptionAboutMe: 'Anything I want to say about me!',
+  mobileSize: 900
 }
 
 test('renders description about me through props', () => {

@@ -4,11 +4,11 @@ import About from './About';
 import { CustomThemeProvider } from '../../hooks/theme';
 
 type Props = {
-  widthPage: number
+  mobileSize: number
 }
 
 const props: Props = {
-  widthPage: 1000
+  mobileSize: 1000
 }
 
 test('renders about me main content (Title - component)', () => {

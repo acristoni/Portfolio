@@ -28,7 +28,7 @@ function App() {
       <>
        <GlobalStyle />
        <Header widthPage={pageWidth} mobileSize={mobileSize}/>
-       <About widthPage={pageWidth}/>
+       <About mobileSize={mobileSize}/>
        <Skills skills={skills} widthPage={pageWidth}/>
        <Works widthPage={pageWidth}/>
        <Footer message={footerMessage} contacts={contacts} widthPage={pageWidth}/>

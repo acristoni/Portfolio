@@ -6,8 +6,14 @@ export const Container = styled.div`
   padding-top: 15vh;
 `;
 
-export const FirstSection = styled.div`
-  display: flex;  
+export const FirstSection = styled.div<{mobileSize: number}>`
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  @media (min-width: ${props => props.mobileSize}px) {
+    flex-direction: row;
+  }
 `;
 
 export const DescriptionSection = styled.div`

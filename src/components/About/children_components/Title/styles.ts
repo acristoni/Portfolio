@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div<{mobileSize: number}>`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80vh;
-    width: 50%;
+    width: 100%;
+
+    @media (min-width: ${props => props.mobileSize}px) {
+        width: 50%;
+    }
 `;
 
 export const Name = styled.h1`

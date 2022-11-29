@@ -2,11 +2,11 @@ import React from 'react';
 import { aboutTitle } from '../../../../types/aboutTitle.type'
 import { Container, Name, STitle, SubTitle } from './styles';
 
-function Title({name, title, subTitle}: aboutTitle) {
+function Title({name, title, subTitle, mobileSize}: aboutTitle) {
   const characters = subTitle.length
   
   return (
-    <Container data-testid="title">
+    <Container data-testid="title" mobileSize={mobileSize}>
       <Name>{name}</Name>
       <STitle>{title}</STitle>
       <SubTitle characters={characters}>{subTitle}</SubTitle>

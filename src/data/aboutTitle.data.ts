@@ -1,6 +1,6 @@
 import { aboutTitle } from "../types/aboutTitle.type";
 
-const AboutTitle: aboutTitle = {
+const AboutTitle = {
     name: 'Adonai Cristoni',
     title: 'FullStack Developer',
     subTitle: 'Code solutions for your projects '

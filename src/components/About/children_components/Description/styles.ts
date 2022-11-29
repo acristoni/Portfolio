@@ -1,13 +1,18 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div<{mobileSize: number}>`
     width: 100%;
     background-color: ${props => props.theme.colors.quaternary};
     display: flex;
+    flex-direction: column;
     padding: 3% 12%;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 5px 10px 18px #888888;
+
+    @media (min-width: ${props => props.mobileSize}px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `;
 
 export const Frame = styled.div`
@@ -32,11 +37,16 @@ export const IconLamp = styled.div`
 `;
 
 
-export const TextDescription = styled.span`
+export const TextDescription = styled.span<{mobileSize: number}>`
     color: ${props => props.theme.colors.primary};
     font-family: ${props => props.theme.fonts.main};
     font-weight: 400;
     font-size: 24px;
     width: 80%;
+    margin: 36px 0;
+
+    @media (min-width: ${props => props.mobileSize}px) {
+        margin: 0;
+    }
 `;
 

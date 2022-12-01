@@ -1,18 +1,30 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div<{mobileSize: number}>`
     background-color: ${props => props.theme.colors.ternary};
     display: flex;
-    align-items: start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 2%;
+
+    @media (min-width: ${props => props.mobileSize}px) {
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+    }
 `;
 
-export const Column = styled.div`
+export const Column = styled.div<{mobileSize: number}>`
     display: flex;
     flex-direction: column;
-    width: 25%;
+    align-items: center;
+    width: 100%;
+
+    @media (min-width: ${props => props.mobileSize}px) {
+        align-items: baseline;
+        width: 25%;
+    }
 `;
 
 export const LeftContent = styled(Column)`
@@ -27,5 +39,7 @@ export const FooterMessage = styled.div`
     margin-top: 1rem;
     font-family: ${props => props.theme.fonts.main};
     color: ${props => props.theme.colors.primary};
-    width: 60%
+    width: 60%;
+    font-size: 20px;
+    font-weight: 400;
 `;

@@ -6,7 +6,7 @@ import { CustomThemeProvider } from '../../../../hooks/theme';
 test('renders my name', () => {
   render(
     <CustomThemeProvider>
-      <NameFooter/>
+      <NameFooter mobileSize={900}/>
     </CustomThemeProvider>
   )
   const myName = screen.getByTestId('myName');

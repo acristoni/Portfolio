@@ -7,18 +7,22 @@ import { Container, LeftContent, RightContent, FooterMessage } from './styles';
 type Props = {
   message: string,
   contacts: contact[],
-  widthPage: number
+  mobileSize: number
 }
 
-function Footer({message, contacts, widthPage}: Props) {
+function Footer({message, contacts, mobileSize}: Props) {
   return (
-    <Container data-testid="footer" id="contacts">
-      <LeftContent>
-        <NameFooter/>
+    <Container 
+      data-testid="footer" 
+      id="contacts"
+      mobileSize={mobileSize}
+    >
+      <LeftContent mobileSize={mobileSize}>
+        <NameFooter mobileSize={mobileSize}/>
         <FooterMessage>{message}</FooterMessage>
       </LeftContent>
-      <RightContent>
-        <Contacts contacts={contacts}/>
+      <RightContent mobileSize={mobileSize}>
+        <Contacts contacts={contacts} mobileSize={mobileSize}/>
       </RightContent>
     </Container>
   );

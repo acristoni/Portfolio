@@ -5,7 +5,8 @@ import { contact } from '../../../../types/contact.type';
 import { CustomThemeProvider } from '../../../../hooks/theme';
 
 type Props = {
-  contacts: contact[]
+  contacts: contact[],
+  mobileSize: number
 }
 
 const props: Props = {
@@ -15,7 +16,8 @@ const props: Props = {
         icon: 'iconName',
         href: 'www.something.com'
     }
-  ]
+  ],
+  mobileSize: 900
 }
 
 test('renders Contacts', () => {

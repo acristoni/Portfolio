@@ -31,7 +31,7 @@ function App() {
        <About mobileSize={mobileSize}/>
        <Skills skills={skills} mobileSize={mobileSize}/>
        <Works widthPage={pageWidth}/>
-       <Footer message={footerMessage} contacts={contacts} widthPage={pageWidth}/>
+       <Footer message={footerMessage} contacts={contacts} mobileSize={mobileSize}/>
       </>
     </CustomThemeProvider>
   );

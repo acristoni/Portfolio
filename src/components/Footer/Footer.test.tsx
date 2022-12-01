@@ -7,7 +7,7 @@ import { contact } from '../../types/contact.type';
 type Props = {
   message: string,
   contacts: contact[],
-  widthPage: number
+  mobileSize: number
 }
 
 const props: Props = {
@@ -19,7 +19,7 @@ const props: Props = {
       href: "https://github.com/acristoni"
     },
   ],
-  widthPage: 1000
+  mobileSize: 1000
 }
 
 test('renders my name', () => {

@@ -4,10 +4,12 @@ export const Title = styled.div<{mobileSize: number}>`
   display: flex;
   width: 40%;
   margin-top: 30px;
-
+  justify-content: center;
+  
   @media (min-width: ${props => props.mobileSize}px) {
     width: 45%;
     margin-top: 0;
+    justify-content: start;
   }
 `;
 
@@ -17,6 +19,7 @@ export const TextTitle = styled.h1<{mobileSize: number}>`
   font-family: ${props => props.theme.fonts.name};
   font-weight: 400;
   font-size: 40px;
+  display: contents;
 `
 
 export const FirstPart = styled(TextTitle)`

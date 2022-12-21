@@ -1,12 +1,12 @@
 import React from 'react';
 import { Title, FirstPart, SecondPart, ThirdPart} from './styles';
 
-function NameFooter({mobileSize}: {mobileSize: number}) {
+function NameFooter() {
   return (
-    <Title data-testid="myName" mobileSize={mobileSize}>
-      <FirstPart mobileSize={mobileSize}>{'</A'}</FirstPart>
-      <SecondPart mobileSize={mobileSize}>Cristoni</SecondPart>
-      <ThirdPart mobileSize={mobileSize}>{'>'}</ThirdPart>
+    <Title data-testid="myName">
+      <FirstPart>{'</A'}</FirstPart>
+      <SecondPart>Cristoni</SecondPart>
+      <ThirdPart>{'>'}</ThirdPart>
     </Title>
   );
 }

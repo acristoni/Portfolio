@@ -8,7 +8,6 @@ const props: aboutTitle = {
   name: 'Ayrton Senna',
   title: 'F1 Race Pilot',
   subTitle: 'Best pilot ever',
-  mobileSize: 1000
 }
 
 test('renders name through props', () => {

@@ -6,12 +6,12 @@ export const Container = styled.div`
   padding-top: 15vh;
 `;
 
-export const FirstSection = styled.div<{mobileSize: number}>`
+export const FirstSection = styled.div`
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
 
-  @media (min-width: ${props => props.mobileSize}px) {
+  @media (min-width: ${props => props.theme.mobileSize}px) {
     flex-direction: row;
   }
 `;

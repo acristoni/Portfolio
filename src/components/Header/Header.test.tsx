@@ -5,12 +5,10 @@ import { CustomThemeProvider } from '../../hooks/theme';
 
 type Props = {
   widthPage: number,
-  mobileSize: number
 }
 
 const props: Props = {
   widthPage: 1000,
-  mobileSize: 900
 }
 
 test('renders my name', () => {

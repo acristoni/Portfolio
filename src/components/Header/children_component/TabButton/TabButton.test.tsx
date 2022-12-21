@@ -7,14 +7,12 @@ type Props = {
     title: string,
     href: string,
     section: string,
-    mobileSize: number
   }
 
 const props: Props = {
     title: 'Something',
     href: '/some/path',
     section: '/some/path',
-    mobileSize: 900
 }
 
 test('renders tab button with title through props', () => {

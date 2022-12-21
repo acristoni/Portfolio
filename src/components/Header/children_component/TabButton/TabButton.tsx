@@ -5,10 +5,9 @@ type Props = {
   title: string,
   href: string,
   section: string,
-  mobileSize: number
 }
 
-function TabButton({title, href, section, mobileSize}: Props) {
+function TabButton({title, href, section}: Props) {
   const [isSection, setIsSection] = useState(false)
   
   if (!isSection && section === href) {
@@ -22,10 +21,10 @@ function TabButton({title, href, section, mobileSize}: Props) {
       <SubMenu href={href}>
         {
           !isSection ? 
-          <SubMenuTitle mobileSize={mobileSize}>
+          <SubMenuTitle>
             {title}
           </SubMenuTitle> :
-          <SubMenuTitleActive mobileSize={mobileSize}>
+          <SubMenuTitleActive>
             {title}
           </SubMenuTitleActive> 
         }

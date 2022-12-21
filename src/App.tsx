@@ -13,9 +13,8 @@ import contacts from './data/contacts.data';
 
 function App() {
   const [pageWidth, setPageWidth] = useState(0)
-  const mobileSize = 900
 
-  let { width, height } = useWindowSize()
+  let { width } = useWindowSize()
 
   useEffect(()=>{
     if (width) {
@@ -27,11 +26,11 @@ function App() {
     <CustomThemeProvider>
       <>
        <GlobalStyle />
-       <Header widthPage={pageWidth} mobileSize={mobileSize}/>
-       <About mobileSize={mobileSize}/>
-       <Skills skills={skills} mobileSize={mobileSize}/>
+       <Header widthPage={pageWidth}/>
+       <About />
+       <Skills skills={skills}/>
        <Works widthPage={pageWidth}/>
-       <Footer message={footerMessage} contacts={contacts} mobileSize={mobileSize}/>
+       <Footer message={footerMessage} contacts={contacts}/>
       </>
     </CustomThemeProvider>
   );

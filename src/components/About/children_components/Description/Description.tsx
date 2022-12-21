@@ -3,19 +3,18 @@ import { Icon } from '../../../Icon/Icon';
 import { Container, Frame, IconLamp, TextDescription } from './styles';
 
 type Props = {
-  descriptionAboutMe: string,
-  mobileSize: number
+  descriptionAboutMe: string
 }
 
-function Description({descriptionAboutMe, mobileSize}: Props) {
+function Description({descriptionAboutMe}: Props) {
   return (
-    <Container data-testid="description" mobileSize={mobileSize}>
+    <Container data-testid="description">
         <Frame>
           <IconLamp>
             <Icon iconName='lamp' size={30}/>
           </IconLamp>
         </Frame>
-        <TextDescription mobileSize={mobileSize}>{descriptionAboutMe}</TextDescription>
+        <TextDescription>{descriptionAboutMe}</TextDescription>
     </Container>
   );
 }

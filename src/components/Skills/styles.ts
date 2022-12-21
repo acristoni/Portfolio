@@ -16,13 +16,13 @@ export const Title = styled.h2`
     font-size: 30px;
 `;
 
-export const SkillsSection = styled.div<{mobileSize: number}>`
+export const SkillsSection = styled.div`
     display: flex; 
     flex-direction: column;
     margin-top: 12px;
     width: 100%;
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         display: flex;
         flex-direction: row;
         align-items: baseline;
@@ -31,7 +31,7 @@ export const SkillsSection = styled.div<{mobileSize: number}>`
     }
 `;
 
-export const Skill = styled.button<{mobileSize: number}>`
+export const Skill = styled.button`
     display: flex;
     align-items: center;
     margin-bottom: 4%;
@@ -44,7 +44,7 @@ export const Skill = styled.button<{mobileSize: number}>`
         box-shadow: 5px 10px 18px #888888;
     }
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         flex-direction: column;
         justify-content: center;
         padding: 2%;
@@ -58,7 +58,7 @@ export const LogoSkill = styled.img`
     height: 5rem;
 `;
 
-export const TitleSkill = styled.span<{mobileSize: number}>`
+export const TitleSkill = styled.span`
     margin-top: 0;
     margin-left: 5%;
     color: ${props => props.theme.colors.primary};
@@ -66,7 +66,7 @@ export const TitleSkill = styled.span<{mobileSize: number}>`
     font-weight: 500;
     font-size: 24px;
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         margin-top: 10%;
         margin-left: 0;
         font-weight: 400;

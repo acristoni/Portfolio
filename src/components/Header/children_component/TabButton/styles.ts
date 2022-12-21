@@ -6,11 +6,11 @@ export const SubMenu = styled.a`
     text-decoration:none;
 `;
 
-export const Title = styled.h3<{ mobileSize: number }>`
+export const Title = styled.h3`
     font-size: 24px;
     margin: 50px 0;
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         font-size: 20px;
         margin: 0;
     }

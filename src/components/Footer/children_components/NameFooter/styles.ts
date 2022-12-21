@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
-export const Title = styled.div<{mobileSize: number}>`
+export const Title = styled.div`
   display: flex;
   width: 40%;
   margin-top: 30px;
   justify-content: center;
   
-  @media (min-width: ${props => props.mobileSize}px) {
+  @media (min-width: ${props => props.theme.mobileSize}px) {
     width: 45%;
     margin-top: 0;
     justify-content: start;
   }
 `;
 
-export const TextTitle = styled.h1<{mobileSize: number}>`
+export const TextTitle = styled.h1`
   margin: 0;
   padding: 0;
   font-family: ${props => props.theme.fonts.name};

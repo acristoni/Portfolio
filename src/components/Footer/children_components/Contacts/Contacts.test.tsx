@@ -6,7 +6,6 @@ import { CustomThemeProvider } from '../../../../hooks/theme';
 
 type Props = {
   contacts: contact[],
-  mobileSize: number
 }
 
 const props: Props = {
@@ -17,7 +16,6 @@ const props: Props = {
         href: 'www.something.com'
     }
   ],
-  mobileSize: 900
 }
 
 test('renders Contacts', () => {

@@ -11,6 +11,7 @@ export default interface Theme {
       main: string,
       name: string,
       skills: string
-    }
+    },
+    mobileSize: number
 }
   

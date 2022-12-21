@@ -6,24 +6,19 @@ import Description from './children_components/Description/Description';
 import Title from './children_components/Title/Title';
 import Photo from './children_components/Photo/Photo';
 
-type Props = {
-  mobileSize: number
-}
-
-function About({ mobileSize }: Props) {
+function About() {
   return (
     <Container data-testid="about" id="aboutme">
-      <FirstSection mobileSize={mobileSize}>
+      <FirstSection>
         <Title
           name={AboutTitle.name}
           title={AboutTitle.title}
           subTitle={AboutTitle.subTitle}
-          mobileSize={mobileSize}
         />
-        <Photo mobileSize={mobileSize}/>
+        <Photo/>
       </FirstSection>
       <DescriptionSection>
-        <Description descriptionAboutMe={descriptionAboutMe} mobileSize={mobileSize}/>
+        <Description descriptionAboutMe={descriptionAboutMe}/>
       </DescriptionSection>
     </Container>
   );

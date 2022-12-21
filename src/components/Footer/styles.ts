@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div<{mobileSize: number}>`
+export const Container = styled.div`
     background-color: ${props => props.theme.colors.ternary};
     display: flex;
     flex-direction: column;
@@ -8,20 +8,20 @@ export const Container = styled.div<{mobileSize: number}>`
     width: 100%;
     padding: 2%;
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         flex-direction: row;
         align-items: start;
         justify-content: center;
     }
 `;
 
-export const Column = styled.div<{mobileSize: number}>`
+export const Column = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         align-items: baseline;
         width: 25%;
     }

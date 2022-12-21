@@ -5,10 +5,9 @@ import { Container, Title, SkillsSection, Skill, LogoSkill, TitleSkill } from '.
 
 type Props = {
   skills: skill[]
-  mobileSize: number
 }
 
-function Skills({skills, mobileSize}: Props) {
+function Skills({skills}: Props) {
   const [stackInfo, setStackInfo] = useState('');
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -24,17 +23,16 @@ function Skills({skills, mobileSize}: Props) {
   return (
     <Container data-testid="skills" id="skills">
       <Title>My Skills</Title>
-      <SkillsSection mobileSize={mobileSize}>
+      <SkillsSection>
         {
           skills.map(skill => {
             return (
               <Skill 
                 key={skill.title} 
                 onClick={() => openModalStackInfo(skill.description)}
-                mobileSize={mobileSize}
               >
                 <LogoSkill src={skill.logo} alt={skill.title}/>
-                <TitleSkill mobileSize={mobileSize}>{skill.title}</TitleSkill>
+                <TitleSkill>{skill.title}</TitleSkill>
               </Skill>
             )
           })

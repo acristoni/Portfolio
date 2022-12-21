@@ -4,6 +4,8 @@ export const fontsTypes = {
   skills: 'Arial'
 }
 
+export const mobileSize = 900
+
 export const firstTheme = {
   name: 'first',
   colors: {
@@ -13,7 +15,8 @@ export const firstTheme = {
     quaternary: '#1F1E1B',
     quintenary: '#FF8303',
   },
-  fonts: fontsTypes
+  fonts: fontsTypes,
+  mobileSize: mobileSize
 }
   
 export const secondTheme = {
@@ -25,5 +28,6 @@ export const secondTheme = {
     quaternary: '#FF8303',
     quintenary: '#F0E3CA',
   },
-  fonts: fontsTypes
+  fonts: fontsTypes,
+  mobileSize: mobileSize
 }

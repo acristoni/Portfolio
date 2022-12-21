@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div<{mobileSize: number}>`
+export const Container = styled.div`
     background-color: ${props => props.theme.colors.ternary};
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@ export const Container = styled.div<{mobileSize: number}>`
     width: 100%;
     margin-bottom: 40px;
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         margin-top: 0;
         align-items: start;
         justify-content: start;
@@ -18,25 +18,25 @@ export const Container = styled.div<{mobileSize: number}>`
     }
 `;
 
-export const Title = styled.h2<{mobileSize: number}>`
+export const Title = styled.h2`
     color: ${props => props.theme.colors.secondary};
     font-family: ${props => props.theme.fonts.name};
     font-size: 32px;
     font-weight: 400;
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         font-family: ${props => props.theme.fonts.main};
         font-weight: 700;
     }
 `;
 
-export const ContactsSection = styled.div<{mobileSize: number}>`
+export const ContactsSection = styled.div`
     width: 100%;
     display: flex;  
     padding-left: 35%;
     flex-direction: column;
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         width: 400px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -50,7 +50,7 @@ export const Contact = styled.div`
     align-items: center;
 `;
 
-export const IconBox = styled.div<{mobileSize: number}>`
+export const IconBox = styled.div`
     width: 26px;
     height: 26px;
     display: flex;
@@ -58,7 +58,7 @@ export const IconBox = styled.div<{mobileSize: number}>`
     justify-content: center;
     color: ${props => props.theme.colors.primary};
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         width: 32px;
         height: 32px;
     }

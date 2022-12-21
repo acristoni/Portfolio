@@ -9,20 +9,19 @@ import { Container,
          IconBox } from './styles';
 
 type Props = {
-  contacts: contact[],
-  mobileSize: number
+  contacts: contact[]
 }
 
-function Contacts({ contacts, mobileSize }: Props) {
+function Contacts({ contacts }: Props) {
   return (
-    <Container data-testid="contacts" mobileSize={mobileSize}>
-      <Title mobileSize={mobileSize}>Contacts</Title>
-      <ContactsSection mobileSize={mobileSize}>
+    <Container data-testid="contacts">
+      <Title>Contacts</Title>
+      <ContactsSection>
         {
           contacts?.map(contactInfo => {
             return (
               <Contact key={contactInfo.title}>
-                <IconBox mobileSize={mobileSize}>
+                <IconBox>
                   <Icon iconName={contactInfo.icon} />
                 </IconBox>
                 <Link href={contactInfo.href}>{contactInfo.title}</Link>

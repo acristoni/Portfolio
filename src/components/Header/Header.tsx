@@ -12,18 +12,17 @@ import { SHeader,
          RightContentSmallSize, 
          ContainerHeaderMenu,
          ToggleMenu } from './styles';
+import {mobileSize} from '../../styles/themes'
 
 type PropsHeader = {
   widthPage: number,
-  mobileSize: number
 }
 
 type PropsMenuItens = {
-  mobileSize: number,
   section: string
 }
 
-function Header({ widthPage, mobileSize }: PropsHeader) {
+function Header({ widthPage }: PropsHeader) {
   const [scrollLimit, setScrollLimit] = useState(0)
   const [offset, setOffset] = useState(0);
   const [prevOffSet, setPrevOffset] = useState(0);
@@ -90,7 +89,7 @@ function Header({ widthPage, mobileSize }: PropsHeader) {
           {
             widthPage > mobileSize ?
             <RightContentLargeSize>
-              <MenuItens mobileSize={mobileSize} section={section} />
+              <MenuItens section={section} />
             </RightContentLargeSize> :
             <RightContentSmallSize onClick={()=>setToggleMenu(!toggleMenu)}>
               {
@@ -105,21 +104,20 @@ function Header({ widthPage, mobileSize }: PropsHeader) {
       {
         widthPage <= mobileSize && toggleMenu && visible &&
         <ToggleMenu>
-          <MenuItens mobileSize={mobileSize} section={section} />
+          <MenuItens section={section} />
         </ToggleMenu>
       }
     </ContainerHeaderMenu>
   );
 }
 
-export function MenuItens({mobileSize, section}: PropsMenuItens){
+export function MenuItens({section}: PropsMenuItens){
   return (
     <>
       {
         subMenusHeader.map(subMenu => {
           return (
             <TabButton 
-              mobileSize={mobileSize}
               section={section}
               key={subMenu.href}
               href={subMenu.href}

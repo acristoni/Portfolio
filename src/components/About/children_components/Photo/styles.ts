@@ -1,19 +1,13 @@
 import styled from 'styled-components';
 
-export const Container = styled.div<{mobileSize: number}>`
+export const Container = styled.div`
     position: relative;
     width: 100%;
     height: 80vh;
 
-    @media (min-width: ${props => props.mobileSize}px) {
+    @media (min-width: ${props => props.theme.mobileSize}px) {
         width: 50%;
     }
-`;
-
-export const BackGroundCode = styled.span`
-    position: absolute;
-    height: 60vh;
-    z-index: 3;
 `;
 
 export const BackGrondImg1 = styled.img`

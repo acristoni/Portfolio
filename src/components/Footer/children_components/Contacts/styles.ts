@@ -36,7 +36,7 @@ export const ContactsSection = styled.div`
     padding-left: 35%;
     flex-direction: column;
 
-    @media (min-width: ${props => props.theme.mobileSize}px) {
+    @media (min-width: ${props => props.theme.miniSize}px) {
         width: 400px;
         flex-direction: row;
         flex-wrap: wrap;

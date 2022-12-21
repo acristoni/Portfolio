@@ -7,9 +7,11 @@ export const Container = styled.div`
     justify-content: center;
     height: 80vh;
     width: 100%;
+    padding: 3%;
 
     @media (min-width: ${props => props.theme.mobileSize}px) {
         width: 50%;
+        padding: 0;
     }
 `;
 

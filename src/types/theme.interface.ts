@@ -12,6 +12,7 @@ export default interface Theme {
       name: string,
       skills: string
     },
-    mobileSize: number
+    mobileSize: number,
+    miniSize: number
 }
   

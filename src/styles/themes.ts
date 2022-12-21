@@ -5,6 +5,7 @@ export const fontsTypes = {
 }
 
 export const mobileSize = 900
+export const miniSize = 700
 
 export const firstTheme = {
   name: 'first',
@@ -16,7 +17,8 @@ export const firstTheme = {
     quintenary: '#FF8303',
   },
   fonts: fontsTypes,
-  mobileSize: mobileSize
+  mobileSize: mobileSize,
+  miniSize: miniSize
 }
   
 export const secondTheme = {
@@ -29,5 +31,6 @@ export const secondTheme = {
     quintenary: '#F0E3CA',
   },
   fonts: fontsTypes,
-  mobileSize: mobileSize
+  mobileSize: mobileSize,
+  miniSize: miniSize
 }

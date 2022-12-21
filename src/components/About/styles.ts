@@ -8,11 +8,13 @@ export const Container = styled.div`
 
 export const FirstSection = styled.div`
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
+  padding-bottom: 4%;
 
   @media (min-width: ${props => props.theme.mobileSize}px) {
     flex-direction: row;
+    padding-bottom: 0;
   }
 `;
 

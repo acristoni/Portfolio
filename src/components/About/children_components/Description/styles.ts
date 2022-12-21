@@ -5,7 +5,7 @@ export const Container = styled.div`
     background-color: ${props => props.theme.colors.quaternary};
     display: flex;
     flex-direction: column;
-    padding: 3% 12%;
+    padding: 4% 12%;
     align-items: center;
     box-shadow: 5px 10px 18px #888888;
 

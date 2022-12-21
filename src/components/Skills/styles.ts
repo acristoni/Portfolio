@@ -7,6 +7,11 @@ export const Container = styled.div`
     justify-content: center;
     width: 100%;
     padding: 3%;
+    padding-top: 7%;
+
+    @media (min-width: ${props => props.theme.mobileSize}px) {
+        padding-top: 3%;
+    }
 `;
 
 export const Title = styled.h2`

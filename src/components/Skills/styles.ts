@@ -9,7 +9,7 @@ export const Container = styled.div`
     padding: 3%;
     padding-top: 7%;
 
-    @media (min-width: ${props => props.theme.mobileSize}px) {
+    @media (min-width: ${props => props.theme.miniSize}px) {
         padding-top: 3%;
     }
 `;
@@ -27,7 +27,7 @@ export const SkillsSection = styled.div`
     margin-top: 12px;
     width: 100%;
 
-    @media (min-width: ${props => props.theme.mobileSize}px) {
+    @media (min-width: ${props => props.theme.miniSize}px) {
         display: flex;
         flex-direction: row;
         align-items: baseline;
@@ -49,7 +49,7 @@ export const Skill = styled.button`
         box-shadow: 5px 10px 18px #888888;
     }
 
-    @media (min-width: ${props => props.theme.mobileSize}px) {
+    @media (min-width: ${props => props.theme.miniSize}px) {
         flex-direction: column;
         justify-content: center;
         padding: 2%;
@@ -71,7 +71,7 @@ export const TitleSkill = styled.span`
     font-weight: 500;
     font-size: 24px;
 
-    @media (min-width: ${props => props.theme.mobileSize}px) {
+    @media (min-width: ${props => props.theme.miniSize}px) {
         margin-top: 10%;
         margin-left: 0;
         font-weight: 400;

@@ -33,7 +33,7 @@ function App() {
        <Footer message={footerMessage} contacts={contacts}/>
       </>
     </CustomThemeProvider>
-  );
+  ); 
 }
 
 export default App;

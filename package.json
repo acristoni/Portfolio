@@ -16,6 +16,7 @@
     "@types/styled-components": "^5.1.26",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-facebook-login": "^4.1.1",
     "react-modal": "^3.16.1",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-facebook-login": "^4.1.11",
     "@types/react-modal": "^3.13.1"
   }
 }

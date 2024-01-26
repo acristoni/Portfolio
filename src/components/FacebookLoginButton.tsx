@@ -13,7 +13,7 @@ const FacebookLoginButton = () => {
             appId      : '2266610960223388', // FB App ID
             cookie     : true,
             xfbml      : true,
-            version    : 'v4.0'
+            version    : 'v18.0'
             });
         };
 

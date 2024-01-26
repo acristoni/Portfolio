@@ -1,5 +1,4 @@
 import FacebookLogin from 'react-facebook-login';
-import React from 'react';
 
 export default function Home() {
     const responseFacebook = (response: any) => {
@@ -12,6 +11,10 @@ export default function Home() {
             appId="2266610960223388"
             autoLoad
             callback={responseFacebook}
+            fields="name,email,picture"
+            icon="fa-facebook"
+            textButton="Entrar com o Facebook"
+            size="small"
           />
         </main>
       )

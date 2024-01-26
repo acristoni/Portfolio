@@ -1,4 +1,5 @@
 import FacebookLogin from 'react-facebook-login';
+import FacebookLoginButton from './components/FacebookLoginButton';
 
 export default function Home() {
     const responseFacebook = (response: any) => {
@@ -7,7 +8,8 @@ export default function Home() {
 
     return (
         <main>
-          <FacebookLogin
+          <FacebookLoginButton />
+          {/* <FacebookLogin
             appId="2266610960223388"
             autoLoad
             callback={responseFacebook}
@@ -15,7 +17,7 @@ export default function Home() {
             icon="fa-facebook"
             textButton="Entrar com o Facebook"
             size="small"
-          />
+          /> */}
         </main>
       )
 }
